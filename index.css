@@ -16,6 +16,7 @@ body {
   background-color: #fffbf4;
   color: #072c71;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 a {
@@ -593,18 +594,14 @@ header nav .user-info i:hover {
 }
 
 #review .review-container .review {
-  opacity: 0;
   background: rgba(178, 204, 245, 0.28);
   padding: 2rem 1rem;
   border-radius: 15px;
   position: relative;
 }
 
-#review .review-container .review .img-container {
-  opacity: 0;
-}
-
 #review .review-container .review .img-container img {
+  opacity: 0;
   max-height: 100px;
   max-width: 100px;
   height: 100%;
@@ -617,6 +614,7 @@ header nav .user-info i:hover {
 }
 
 #review .review-container .review p {
+  opacity: 0;
   margin: 0 auto;
   max-width: 35ch;
 }

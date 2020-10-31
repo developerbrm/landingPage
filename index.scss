@@ -21,6 +21,7 @@ body {
   background-color: $bg-color;
   color: $main-color;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 a {
@@ -502,16 +503,14 @@ header {
     gap: 2rem;
 
     .review {
-      opacity: 0;
       background: rgba(178, 204, 245, 0.28);
       padding: 2rem 1rem;
       border-radius: 15px;
       position: relative;
 
       .img-container {
-        opacity: 0;
-
         img {
+          opacity: 0;
           max-height: 100px;
           max-width: 100px;
           height: 100%;
@@ -523,6 +522,7 @@ header {
       }
 
       p {
+        opacity: 0;
         margin: 0 auto;
         max-width: 35ch;
 
