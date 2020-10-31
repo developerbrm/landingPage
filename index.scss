@@ -516,6 +516,11 @@ header {
         margin: 0 auto;
         max-width: 35ch;
 
+        strong {
+          margin-top: .2rem;
+          display: block;
+        }
+
         &::first-letter {
           font-size: 1.7rem;
         }
