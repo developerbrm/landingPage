@@ -146,6 +146,7 @@ header nav .user-info i:hover {
 
 #hero .hero-container .hero-image {
   margin: 0 auto;
+  opacity: 0;
 }
 
 #hero .hero-container .hero-image img {
@@ -159,6 +160,7 @@ header nav .user-info i:hover {
 }
 
 #hero .hero-container .text-container {
+  opacity: 0;
   -ms-grid-column-align: center;
       justify-self: center;
   padding: 2rem;
@@ -206,6 +208,7 @@ header nav .user-info i:hover {
 
 #hero .ingredients .ingredient {
   text-align: center;
+  opacity: 0;
 }
 
 #hero .ingredients .ingredient > div {
@@ -276,6 +279,7 @@ header nav .user-info i:hover {
   width: -moz-max-content;
   width: max-content;
   margin: 4rem auto;
+  opacity: 0;
 }
 
 #info .img-container img {
@@ -301,6 +305,7 @@ header nav .user-info i:hover {
   text-align: right;
   margin: 0 auto;
   margin-right: 0;
+  opacity: 0;
 }
 
 #info .text-container h2 {
@@ -435,12 +440,17 @@ header nav .user-info i:hover {
   margin: 4rem 0;
 }
 
+#missions .mission .img-container {
+  opacity: 0;
+}
+
 #missions .mission .img-container img {
   max-width: 19rem;
   width: 100%;
 }
 
 #missions .mission .text-container {
+  opacity: 0;
   padding: 0 2rem;
   max-width: 50ch;
 }
@@ -583,10 +593,15 @@ header nav .user-info i:hover {
 }
 
 #review .review-container .review {
+  opacity: 0;
   background: rgba(178, 204, 245, 0.28);
   padding: 2rem 1rem;
   border-radius: 15px;
   position: relative;
+}
+
+#review .review-container .review .img-container {
+  opacity: 0;
 }
 
 #review .review-container .review .img-container img {
@@ -607,7 +622,7 @@ header nav .user-info i:hover {
 }
 
 #review .review-container .review p strong {
-  margin-top: .2rem;
+  margin-top: 0.2rem;
   display: block;
 }
 
@@ -732,6 +747,7 @@ header nav .user-info i:hover {
 }
 
 #subs .form-container form {
+  opacity: 0;
   margin: 3rem 0;
   display: inline-block;
   border-radius: 100px;
@@ -823,6 +839,32 @@ footer .sub-section .social-links a:hover {
 
 footer .sub-section .social-links a i {
   font-size: 1.7rem;
+}
+
+@-webkit-keyframes slideFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 @-webkit-keyframes growFade {

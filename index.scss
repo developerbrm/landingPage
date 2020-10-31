@@ -132,6 +132,7 @@ header {
 
     .hero-image {
       margin: 0 auto;
+      opacity: 0;
 
       img {
         padding: 1rem;
@@ -143,6 +144,7 @@ header {
     }
 
     .text-container {
+      opacity: 0;
       justify-self: center;
       padding: 2rem;
       align-self: center;
@@ -186,6 +188,7 @@ header {
 
     .ingredient {
       text-align: center;
+      opacity: 0;
 
       & > div {
         width: $unit;
@@ -241,6 +244,7 @@ header {
     height: 50vh;
     width: max-content;
     margin: 4rem auto;
+    opacity: 0;
 
     img {
       display: block;
@@ -263,6 +267,7 @@ header {
     text-align: right;
     margin: 0 auto;
     margin-right: 0;
+    opacity: 0;
 
     h2 {
       font-family: $heading-font;
@@ -373,6 +378,7 @@ header {
     margin: 4rem 0;
 
     .img-container {
+      opacity: 0;
       img {
         max-width: 19rem;
         width: 100%;
@@ -380,6 +386,7 @@ header {
     }
 
     .text-container {
+      opacity: 0;
       padding: 0 2rem;
       max-width: 50ch;
     }
@@ -495,12 +502,15 @@ header {
     gap: 2rem;
 
     .review {
+      opacity: 0;
       background: rgba(178, 204, 245, 0.28);
       padding: 2rem 1rem;
       border-radius: 15px;
       position: relative;
 
       .img-container {
+        opacity: 0;
+
         img {
           max-height: 100px;
           max-width: 100px;
@@ -517,7 +527,7 @@ header {
         max-width: 35ch;
 
         strong {
-          margin-top: .2rem;
+          margin-top: 0.2rem;
           display: block;
         }
 
@@ -616,6 +626,7 @@ header {
     }
 
     form {
+      opacity: 0;
       $height: 1.5em;
       margin: 3rem 0;
       display: inline-block;
@@ -706,6 +717,18 @@ footer {
 }
 
 //utility classes
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 @keyframes growFade {
   from {
